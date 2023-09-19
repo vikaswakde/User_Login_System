@@ -8,8 +8,9 @@ app.secret_key = b'\x1f\x98\xdb\xc3;\xe9)7@\x8a\x88^\x976"\x1d'
 # Database
 from pymongo import MongoClient
 
+# Enter your MongoClient------ <password> ---- 
 client = MongoClient(
-    "mongodb+srv://vikaswakdepc:vikas@cluster0.89a4blc.mongodb.net/?retryWrites=true&w=majority"
+    "mongodb+srv://vikaswakdepc:<password>@cluster0.89a4blc.mongodb.net/?retryWrites=true&w=majority"
 )
 
 db = client.user_login_system_2
